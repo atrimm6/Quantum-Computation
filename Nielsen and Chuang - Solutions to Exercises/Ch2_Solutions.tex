@@ -99,5 +99,18 @@ which is the matrix product of the matrix representations for $B$ and $A$.
 	&=|v_j\rangle
 \end{align*}
 which implies $(I_V)_{ij}=\delta_{ij}$.
+\item We need to check the three conditions:
+\begin{enumerate}[(1)]
+\item \begin{align*}
+	(y,\sum_k \lambda_k z^{(k)})&=\sum_i y_i^* \sum_k \lambda_k z_i^{(k)} \\
+	&=\sum_k \lambda_k \sum_i y_i^*z_i^{(k)} \\
+	&=\sum_k \lambda_k (y,z^{(k)})
+\end{align*}
+\item \begin{align*}
+	(z,y)^*=(\sum_i z_i^* y_i)^*=\sum_i z_i y_i^*=(y,z)
+\end{align*}
+\item $$(y,y)=\sum_i y_i^* y_i = \sum_i|y_i|^2 \geq 0, =0\text{ iff } y=0.$$
+\end{enumerate}
+Therefore, this is an inner product on $\C^n$.
 \end{enumerate}
 \end{document}

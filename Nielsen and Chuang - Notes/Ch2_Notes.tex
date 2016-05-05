@@ -90,4 +90,35 @@ We consider vectors $|\psi\rangle \in V=\C^n$.
 	\item We can view a linear operator as a matrix $A:V \to W$ by choosing a basis for both $V$ and $W$. This is called the \emph{matrix representation} of $V$. Let $|v_i\rangle$ be a basis for $V$ and $|w_i\rangle$ be a basis for $W$. Then the matrix elements $A_{ij}$ are given by
 	$$A|v_j\rangle = \sum_i A_{ij}|w_i\rangle$$
 \end{itemize}
+\subsection{The Pauli matrices}
+\begin{align*}
+	\sigma_0&\equiv I \equiv \begin{pmatrix}
+		1&0\\0&1
+	\end{pmatrix}, \ \  \sigma_1\equiv \sigma_x \equiv X \equiv \begin{pmatrix}
+		0&1\\1&0
+	\end{pmatrix}, \\
+	\sigma_2 \equiv \sigma_y &\equiv Y\equiv \begin{pmatrix}
+		0&-i\\i&0
+	\end{pmatrix}, \ \ \sigma_3 \equiv \sigma_z\equiv Z \equiv \begin{pmatrix}
+		1&0\\0&-1
+	\end{pmatrix}.
+\end{align*}
+\subsection{Inner products}
+\begin{itemize}
+	\item An \emph{inner product} is a map 
+		\begin{align*}
+		(\cdot,\cdot):V \times V &\to \C \\
+		(|v\rangle, |w\rangle) &\to \langle v|w\rangle	
+		\end{align*}
+		such that
+		\begin{enumerate}[(1)]
+			\item $(\cdot,\cdot)$ is linear in the second argument,
+			$$(|v\rangle,\sum_i\lambda_i|w_i\rangle)=\sum_i\lambda_i\langle v|w_i\rangle$$
+			\item $\langle v|w\rangle=\langle w|v\rangle^*$,
+			\item $\langle v|v\rangle \geq 0$ with equality iff $|v\rangle =0$.
+		\end{enumerate}
+		{\bf Ex:} $\C^n$ has an inner product defined by
+		$$(y,z)=\sum_i y_i^*z_i$$
+		\item A vector space equipped with an inner product is called an \emph{inner product space}.
+\end{itemize}
 \end{document}
