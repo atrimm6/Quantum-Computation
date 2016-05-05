@@ -1,0 +1,93 @@
+\documentclass[12 pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{fullpage}
+\usepackage[mathscr]{euscript}
+\usepackage{youngtab}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{mathrsfs}
+\newcommand{\W}{\mathcal{W}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\pf}{\tilde{\phi}_N}
+\newcommand{\g}{\mathfrak{g}}
+\newcommand{\su}{\mathfrak{su}}
+\newcommand{\so}{\mathfrak{so}}
+\newcommand{\usp}{\mathfrak{usp}}
+\newcommand{\h}{\mathfrak{h}}
+\newcommand{\BB}{\mathfrak{B}}
+\newcommand{\mon}{\OO_{\vec{n}}(a)}
+\newcommand{\I}{\mathcal{I}}
+%\numberwithin{equation}{section}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{corollary}[theorem]{Corollary}
+
+%\newenvironment{proof}[1][Proof]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\begin{document}
+
+\title{Chapter 2}
+\author{Introduction to Quantum Mechanics}
+\date{}
+\maketitle
+\section{Linear Algebra}
+We consider vectors $|\psi\rangle \in V=\C^n$.
+\subsection{Bases and linear independence}
+\begin{itemize}
+	\item A \emph{spanning set} for $V$ is a set of vectors $\{|v_1\rangle,\dots,|v_n\rangle\}$ such that $|v\rangle=\sum_ia_i|v_i\rangle$ for any $|v\rangle \in V$. \\
+	\\
+	$V$ may have many different spanning sets. E.g., for $\C^2$
+	$$|v_1\rangle \equiv \begin{pmatrix}
+		1\\0
+	\end{pmatrix}, \ \ |v_2\rangle \equiv \begin{pmatrix}
+		0\\1
+	\end{pmatrix}$$
+	and 
+	$$|v_1\rangle \equiv \frac{1}{\sqrt{2}}\begin{pmatrix}
+		1\\1
+	\end{pmatrix}, \ \ \frac{1}{\sqrt{2}}|v_2\rangle \equiv \begin{pmatrix}
+		1\\-1
+	\end{pmatrix}$$
+	are both spanning sets.
+	\item A set of non-zero vectors $\{|v_1\rangle,\dots,|v_n\rangle\}$ are \emph{linearly independent} if 
+	$$\sum_i a_i|v_i\rangle =0 \implies a_i=0 \ \forall i$$
+	\item A \emph{basis} for $V$ is a linearly independent spanning set. 
+	\item A basis always exists and any two bases for $V$ have the same number of elements. The number of elements in any basis for $V$ is called the \emph{dimension} of $V$. We will primarily be interested in finite-dimensional vector spaces.
+\end{itemize}
+\subsection{Linear operators and matrices}
+\begin{itemize}
+	\item A \emph{linear operator} is defined by
+	\begin{align*}
+		A&:V \to W \\
+		A(\sum_i a_i|v_i\rangle)&=\sum_ia_i A|v_i\rangle
+	\end{align*}
+	It is clear that once the action of $A$ on a basis is specified, the action of $A$ is completely determined on all vectors.
+	\item If $A:V \to W$ and $B:W \to X$, then the \emph{composition} of $B$ with $A$ is defined by
+	\begin{align*}
+		BA&:V \to X \\
+		(BA)|v\rangle &=B(A|v\rangle)
+	\end{align*}
+	\item We can view a linear operator as a matrix $A:V \to W$ by choosing a basis for both $V$ and $W$. This is called the \emph{matrix representation} of $V$. Let $|v_i\rangle$ be a basis for $V$ and $|w_i\rangle$ be a basis for $W$. Then the matrix elements $A_{ij}$ are given by
+	$$A|v_i\rangle = \sum_i A_{ij}|w_j\rangle$$
+\end{itemize}
+\end{document}

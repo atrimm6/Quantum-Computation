@@ -1,0 +1,85 @@
+\documentclass[12 pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{fullpage}
+\usepackage[mathscr]{euscript}
+\usepackage{youngtab}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{mathrsfs}
+\newcommand{\W}{\mathcal{W}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\pf}{\tilde{\phi}_N}
+\newcommand{\g}{\mathfrak{g}}
+\newcommand{\su}{\mathfrak{su}}
+\newcommand{\so}{\mathfrak{so}}
+\newcommand{\usp}{\mathfrak{usp}}
+\newcommand{\h}{\mathfrak{h}}
+\newcommand{\BB}{\mathfrak{B}}
+\newcommand{\mon}{\OO_{\vec{n}}(a)}
+\newcommand{\I}{\mathcal{I}}
+%\numberwithin{equation}{section}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{corollary}[theorem]{Corollary}
+
+%\newenvironment{proof}[1][Proof]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\begin{document}
+
+\title{Chapter 2 Solutions}
+\author{}
+\date{}
+\maketitle
+\section{Linear Algebra}
+\subsection{Bases and linear independence}
+\begin{enumerate}
+\item We see that 
+$$a_1\begin{pmatrix}
+	1\\-1
+\end{pmatrix}+a_2\begin{pmatrix}
+	1\\2
+\end{pmatrix}+a_3\begin{pmatrix}
+	2\\1
+\end{pmatrix}=\begin{pmatrix}
+	0\\0
+\end{pmatrix}$$
+has solution $a_1=a_2=-a_3 \neq 0$. Therefore the vectors are linearly dependent.
+\item Choosing the basis $|0\rangle =\begin{pmatrix}
+	1\\0
+\end{pmatrix}, \ |1\rangle =\begin{pmatrix}
+	0\\1
+\end{pmatrix},$ the matrix representation of $A$ with respect to this basis is 
+$$A=\begin{pmatrix}
+	0&1\\1&0
+\end{pmatrix}.$$
+Taking instead the basis $|0\rangle=\frac{1}{\sqrt{2}}\begin{pmatrix}
+	1\\1
+\end{pmatrix}, \ |1\rangle=\frac{1}{\sqrt{2}}\begin{pmatrix}
+	1\\-1
+\end{pmatrix}$, the matrix representation of $A$ with respect to this basis is
+$$A=\begin{pmatrix}
+	1&0\\0&-1
+\end{pmatrix}.$$
+\item 
+\end{enumerate}
+\end{document}
