@@ -112,5 +112,28 @@ which implies $(I_V)_{ij}=\delta_{ij}$.
 \item $$(y,y)=\sum_i y_i^* y_i = \sum_i|y_i|^2 \geq 0, =0\text{ iff } y=0.$$
 \end{enumerate}
 Therefore, this is an inner product on $\C^n$.
+\item Using property (2) followed by (1), we have
+\begin{align*}
+	(\sum_i \lambda_i|w_i\rangle,|v\rangle)&=(|v\rangle,\sum_i \lambda_i|w_i\rangle)^* \\
+	&=(\sum_i\lambda_i \langle v|w_i\rangle)^*\\
+	&=\sum_i\lambda_i^* \langle v|w_i\rangle^* \\
+	&=\sum_i\lambda_i^* \langle w_i|v\rangle.
+\end{align*}
+\item Taking the inner product,
+\begin{align*}
+	\langle w|v\rangle &= \begin{pmatrix}
+		1 & 1
+	\end{pmatrix}\begin{pmatrix}
+		1\\-1
+	\end{pmatrix}\\
+	&=1-1 \\
+	&=0.
+\end{align*}
+Thus, the vectors are orthogonal. The norm of each vector is $\sqrt{2}$, so the normalized form of the vectors are given by
+$$|w\rangle=\frac{1}{\sqrt{2}}\begin{pmatrix}
+	1\\1
+\end{pmatrix}, \ \  |v\rangle=\frac{1}{\sqrt{2}}\begin{pmatrix}
+	1\\-1
+\end{pmatrix}.$$
 \end{enumerate}
 \end{document}
