@@ -80,6 +80,19 @@ Taking instead the basis $|0\rangle=\frac{1}{\sqrt{2}}\begin{pmatrix}
 $$A=\begin{pmatrix}
 	1&0\\0&-1
 \end{pmatrix}.$$
+\item Using equation (2.12) repeatedly, we have 
+	\begin{align*}
+	BA|v_i\rangle &= B(\sum_j A_{ji}|w_j\rangle) \\
+	&=\sum_j A_{ji}(B|w_j\rangle) \\
+	&=\sum_j A_{ji} \sum_k B_{kj}|x_k\rangle \\
+	&=\sum_k (\sum_j B_{kj}A_{ji})|x_k\rangle 
+	\end{align*}
+Also by (2.12), we have 
+	\begin{align*}
+	BA|v_i\rangle &=\sum_k (BA)_{ki}|x_k\rangle\end{align*}
+Comparing the two expressions, we find
+$$(BA)_{ki}=\sum_j B_{kj}A_{ji},$$
+which is the matrix product of the matrix representations for $B$ and $A$.
 \item 
 \end{enumerate}
 \end{document}
